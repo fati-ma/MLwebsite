@@ -10,6 +10,7 @@ console.log(student);
 var state;
 var required;
 
+function state() {
 if (student == 'Y' || student =='y'){
     state = 'Student';
 } else if (student == 'N' || student =='n') {
@@ -18,5 +19,10 @@ if (student == 'Y' || student =='y'){
     required=prompt(name+", please answer the question with (Y/y or N/n).")
 }
 console.log(state);
+}
+state();
 
-
+var opinion = function  (){
+    document.write('<p>Thank you '+name+' for visiting our website!')
+}
+opinion();
