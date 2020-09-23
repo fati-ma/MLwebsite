@@ -9,6 +9,8 @@ console.log(student);
 
 var state;
 var required;
+var stateStudent;
+var message= 'You are ';
 
 function state() {
 if (student == 'Y' || student =='y'){
@@ -19,6 +21,9 @@ if (student == 'Y' || student =='y'){
     required=prompt(name+", please answer the question with (Y/y or N/n).")
 }
 console.log(state);
+stateStudent = document.getElementById("stateId");
+stateStudent.textContent=message+state;
+
 }
 state();
 
